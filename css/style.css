@@ -14,6 +14,13 @@ body {
     background-color: rgb(32, 32, 32);
 }
 
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
 /*--------------------HEADER--------------------*/
 
 header {
@@ -23,34 +30,42 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    height: 21vh;
+    z-index: 10;
+    
 }
 
-header h1 {
+
+.titulo h1 {
     display: none;
 }
+.titulo img {
+    width: 50%;
+}
 
 
-header nav ul li a {
-    color: white;
-    list-style: none;
+.menu ul li a {
     text-decoration: none;
+    color: white;
     background-color: rgb(29, 77, 173);
     border-radius: 10px;
     padding: 0.5rem;
-    margin: 0.5rem;
 }
 
-header nav ul li {
-    margin: 2px 25px 10px 25px;
+.menu ul li {
+    margin: 1rem;
 }
 
-header nav ul {
-    text-align: center;
+
+.menu ul  {
+    list-style: none;
     display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
 
 }
+
+
 
 
 
@@ -65,7 +80,7 @@ header nav ul {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url(../img/TechnoWallMaterial.jpg);
+    background:rgb(43, 43, 43);
 
     /* Letra */
     color: white;
@@ -73,6 +88,7 @@ header nav ul {
 
 .first img {
     margin: 1rem;
+    width: 80%;
 }
 
 .first p {
@@ -86,7 +102,6 @@ header nav ul {
 
 .background {
     background-color: rgb(43, 43, 43);
-    background-image: url(../img/Fondo\ oscuro.jpg);
     background-size: cover;
 }
 
@@ -101,31 +116,19 @@ header nav ul {
 
 .card {
     background-color: white;
-    width: 500px;
+    width: 350px;
     margin: 80px 30px 80px 30px;
     border-radius: 20px 20px 15px 15px;
     box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.416);
 }
 
 .cardImage {
-    width: 450px;
-    height: 402px;
+    width: 90%;
     margin: 15px;
     background-size: auto;
     border-radius: 15px 15px 0 0;
 }
 
-.card1 {
-    background-image: url(../img/ryzen9.jpg);
-}
-
-.card2 {
-    background-image: url(../img/ryzen92.jpg);
-}
-
-.card3 {
-    background-image: url(../img/fuenteLogo.jpg);
-}
 
 .card h2 {
     text-align: center;
@@ -141,9 +144,6 @@ header nav ul {
     border-radius: 5px;
     text-decoration: none;
 }
-
-
-
 
 
 /*--------------------FOOTER--------------------*/

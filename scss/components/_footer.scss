@@ -1,0 +1,22 @@
+footer {
+    background-color: rgb(32, 32, 32);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+
+}
+
+.footerContenedor {
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.footerContenedorLink {
+    margin: 30px;
+    text-decoration: none;
+}
+
+.copy {
+    color: rgb(169, 169, 169);
+}
